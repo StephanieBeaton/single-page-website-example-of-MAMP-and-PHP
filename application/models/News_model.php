@@ -43,4 +43,12 @@ class News_model extends CI_Model {
             return $this->db->insert('news', $data);
         }
 
+        //  delete_news_item() takes care of deleting the news item from the database.
+        public function delete_news_item($slug)
+        {
+
+          $result = $this->db->delete('news', array('slug' => $slug));
+
+        }
+
 }

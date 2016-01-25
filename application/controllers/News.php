@@ -83,4 +83,11 @@ class News extends CI_Controller {
             }
 
         }
+
+        function delete_news_item($slug = NULL)
+        {
+
+            $this->news_model->delete_news_item($slug);
+            $this->index();
+        }
 }
