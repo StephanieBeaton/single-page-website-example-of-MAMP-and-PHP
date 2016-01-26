@@ -4,3 +4,6 @@ temp.txt
 index.html
 index_fitfu.html
 index_fitfu_original.html
+application/views/guestbook/index_backup.php
+application/views/guestbook/index_backup_2.php
+application/views/guestbook/success.php

@@ -32,22 +32,28 @@ class Guestbook extends CI_Controller {
 
         public function index()
         {
+                // this is needed for form_open() in views/guestbook/index.php
+                $this->load->helper('form');
+                // this is needed for validation_errors() in views/guestbook/index.php
+                $this->load->library('form_validation');
+
 
                 $data['guest_book'] = $this->guest_book_model->get_guestbookentries();
-                // $data['title'] = 'Guest Book List';
+                $data['title'] = 'Guest Book List';
 
                 $this->load->view('templates/header', $data);
                 $this->load->view('guestbook/index', $data);
                 $this->load->view('templates/footer');
+
         }
 
 
 
         public function create()
         {
-            // this is needed for form_open() in views/guestbook/create.php
+            // this is needed for form_open() in views/guestbook/index.php
             $this->load->helper('form');
-            // this is needed for validation_errors() in views/guestbook/create.php
+            // this is needed for validation_errors() in views/guestbook/index.php
             $this->load->library('form_validation');
 
 
@@ -81,7 +87,11 @@ class Guestbook extends CI_Controller {
                 //  set_guestbookentry() is a method that writes the data to the database
                 //  It is in the Guest_book_model
                 $this->guest_book_model->set_guestbookentry();
+
+                /*
                 $this->load->view('guestbook/success');
+                */
+                $this->index();
             }
 
         }
@@ -89,7 +99,7 @@ class Guestbook extends CI_Controller {
         function delete_guestbook_entry($slug = NULL)
         {
 
-            $this->guest_book_model->delete_guestbook_item($slug);
+            $this->guest_book_model->delete_guestbook_entry($slug);
             $this->index();
         }
 }

@@ -60,7 +60,7 @@ color: #000;
     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
     text-align: center;
-    background: url('./images/Fiitfu-backgrounds-homesceen2.jpg')  no-repeat center center fixed;
+    background: url('../images/Fiitfu-backgrounds-homesceen2.jpg')  no-repeat center center fixed;
     /* background: url('https://40.media.tumblr.com/1b916597d3e174399cb7adadddb66ede/tumblr_nt5uk4psl31ud7rr3o1_1280.jpg') no-repeat center center fixed;
     */
     background-size: cover;
@@ -150,7 +150,7 @@ hr.intro-divider {
 /*section 2*/
 .content-section-a {
     padding: 50px 0;
-    background: url('./images/Fiitfu-backgrounds-clients2.jpg')  no-repeat center center fixed;
+    background: url('../images/Fiitfu-backgrounds-clients2.jpg')  no-repeat center center fixed;
     /*
     background: url('https://41.media.tumblr.com/eb2382a5a4c996cfdab27bc0d1eb51ff/tumblr_nt5umxS1FY1ud7rr3o1_1280.jpg') no-repeat center center fixed;
     */
