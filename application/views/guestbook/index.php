@@ -37,10 +37,7 @@
     <div class="content-section-a">
       <div class="bg-overlay2">
         <div class="container">
-            <!--
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-            -->
+
 
                     <div class="clearfix"></div>
                     <h2 class="section-heading guest-book-section-heading">Guest Book</h2>
@@ -49,8 +46,9 @@
                     </br>
 
                     <!-- form to enter new Guest in Guest Book -->
-                    <!--
-                    <form action="http://localhost:8888/fiitfu/index.php/news/create" method="post" accept-charset="utf-8">
+
+                    <!--   code before substituing  php
+                    <form action="http://localhost:8888/fiitfu_2/index.php/news/create" method="post" accept-charset="utf-8">
                     <input type="hidden" name="csrf_test_name" value="948792627037f57a68ce44b7f1930433" style="display:none;" />
                     -->
 
@@ -78,24 +76,6 @@
 
                     </form>
 
-<!--
-<?php echo validation_errors(); ?>
-
-<?php echo form_open('guestbook/create'); ?>
-
-    <label for="name">Name</label>
-    <input type="input" name="name" /><br />
-
-    <label for="email">Email</label>
-    <input type="input" name="email" /><br />
-
-    <label for="comments">Comments</label>
-    <textarea name="comments"></textarea><br />
-
-    <input type="submit" name="submit" value="Create guest book entry" />
-
-</form>
--->
 
                     </br>
                     </br>
