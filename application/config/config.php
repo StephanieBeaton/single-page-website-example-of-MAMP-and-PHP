@@ -28,7 +28,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 /*   $config['base_url'] = '127.0.0.1:8888';*/
 
-   $config['base_url'] = 'http://localhost:8888/fiitfu/';
+   $config['base_url'] = 'http://localhost:8888/fiitfu_2/';
 
 /* $config['base_url'] = 'localhost';
 */
