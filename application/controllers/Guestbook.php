@@ -51,6 +51,8 @@ class Guestbook extends CI_Controller {
 
         public function create()
         {
+            echo "inside controllers/Guestbook";
+
             // this is needed for form_open() in views/guestbook/index.php
             $this->load->helper('form');
             // this is needed for validation_errors() in views/guestbook/index.php
@@ -59,10 +61,10 @@ class Guestbook extends CI_Controller {
 
             $data['title'] = 'Create a guest book entry';
 
-            /*  this was debugging
-            $this->load->helper('url');
-            echo base_url();
-            */
+            // this was debugging
+            // $this->load->helper('url');
+            // echo base_url();
+
 
             // The set_rules() method takes three arguments;
             //     the name of the input field,
@@ -88,9 +90,8 @@ class Guestbook extends CI_Controller {
                 //  It is in the Guest_book_model
                 $this->guest_book_model->set_guestbookentry();
 
-                /*
-                $this->load->view('guestbook/success');
-                */
+
+                // $this->load->view('guestbook/success');
                 $this->index();
             }
 
