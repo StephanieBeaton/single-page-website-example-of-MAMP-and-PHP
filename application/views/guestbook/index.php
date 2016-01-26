@@ -121,7 +121,7 @@
                                   <tr class="guest-book-row">
                                     <td class="guest-book-cell"><?php echo $guest_book_entry['name']; ?></td>
                                     <td class="guest-book-cell"><?php echo $guest_book_entry['email']; ?></td>
-                                    <td class="guest-book-cell" align='right'><a href="guestbook/delete_guestbook_entry/<?php echo $guest_book_entry['slug']; ?>" onclick="return confirm('Do you want to delete this guest entry?');"><button id="button_delete">Delete</button></a></td>
+                                    <td class="guest-book-cell" align='right'><a href="delete_guestbook_entry/<?php echo $guest_book_entry['slug']; ?>" onclick="return confirm('Do you want to delete this guest entry?');"><button id="button_delete">Delete</button></a></td>
                                   </tr>
                                   <tr class="guest-book-row">
                                     <td class="guest-book-cell" colspan="3"><?php echo $guest_book_entry['comments']; ?></td>
