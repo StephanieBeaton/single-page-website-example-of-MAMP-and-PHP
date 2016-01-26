@@ -65,14 +65,22 @@ $route['(:any)'] = 'pages/view/$1';
 
     routes the request to the first matching rule from top to bottom
 */
+
+/*
 $route['guestbook/create'] = 'guestbook/create';
 $route['guestbook/(:any)'] = 'guestbook/view/$1';
+*/
+$route['guestbook/(:any)'] = 'guestbook';
 $route['guestbook'] = 'guestbook';
+$route['default_controller'] = 'guestbook';
+$route['(:any)'] = 'guestbook';
 
+/*
 $route['news/create'] = 'news/create';
 $route['news/(:any)'] = 'news/view/$1';
 $route['news'] = 'news';
 $route['(:any)'] = 'pages/view/$1';
 $route['default_controller'] = 'pages/view';
+*/
 
 
