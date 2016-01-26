@@ -11,3 +11,31 @@ INSERT INTO news
 (title, slug, text)
 VALUES
 ('Election 2016', '5', 'Primaries in New Hampshire soon... ');
+
+
+CREATE TABLE guest_book (
+        id int(11) NOT NULL AUTO_INCREMENT,
+        name varchar(128) NOT NULL,
+        slug varchar(128) NOT NULL,
+        email varchar(128) NOT NULL,
+        comments text NOT NULL,
+        PRIMARY KEY (id),
+        KEY slug (slug)
+);
+
+INSERT INTO guest_book
+(name, slug, email, comments)
+VALUES
+('Mary-Jane Mehlenbacher', 'mary-jane-mehlenbacher', 'maryjane@fiitfu.com', 'Phasellus fringilla, diam in luctus scelerisque, justo neque lobortis sem, feugiat sollicitudin massa tellus a dolor. Pellentesque vitae mattis mauris. Praesent vitae feugiat nibh. Aliquam hendrerit, ipsum at imperdiet dignissim, urna ex posuere neque, id luctus lorem ligula ac sapien. Morbi malesuada neque vitae arcu convallis aliquam. Nulla finibus, nibh at placerat ultricies, orci tortor elementum justo, eu malesuada est tellus vitae purus. Curabitur tempus commodo sapien, id rutrum urna porta sit amet. Vestibulum scelerisque lobortis bibendum. Integer aliquam nisi ut mollis accumsan. Ut tellus purus, venenatis nec urna et, gravida euismod tortor. Maecenas aliquam felis nulla, non euismod urna maximus quis. Donec tempor finibus felis a mattis. Phasellus et sapien ac risus efficitur pharetra. Duis imperdiet nisl in maximus bibendum.');
+
+
+INSERT INTO guest_book
+(name, slug, email, comments)
+VALUES
+('Charlyne Fothergill', 'charlyne-fothergill', 'charlyne@lighthouselabs.ca', 'Nullam ultricies nunc nec lacus bibendum, id laoreet risus suscipit. Integer sed libero lorem. Maecenas malesuada lorem sed nisl pretium porta. Pellentesque quis purus et erat pretium fringilla. Proin at accumsan mauris, in luctus orci. Praesent tristique ullamcorper accumsan. Pellentesque a lacus quis turpis bibendum porttitor. Proin sed diam odio. Cras fringilla tempor purus.');
+
+INSERT INTO guest_book
+(name, slug, email, comments)
+VALUES
+('Stephanie Beaton', 'stephanie-beaton', 'stefanybeaton@gmail.com', 'Nullam ultricies nunc nec lacus bibendum, id laoreet risus suscipit. Integer sed libero lorem. Maecenas malesuada lorem sed nisl pretium porta. Pellentesque quis purus et erat pretium fringilla. Proin at accumsan mauris, in luctus orci. Praesent tristique ullamcorper accumsan. Pellentesque a lacus quis turpis bibendum porttitor. Proin sed diam odio. Cras fringilla tempor purus.');
+
